@@ -11,10 +11,10 @@ class ContadorApp(MDApp):
 
         layout = MDBoxLayout(orientation="vertical", padding=20)  # Error: debería ser vertical
         toolbar= MDTopAppBar(title="contador KivyMD")
-        layout.add_widget(MDTopbar(title="Contador KivyMD"))  # Error: argumento correcto es title
+        layout.add_widget(MDTopAppBar(title="Contador KivyMD"))  # Error: argumento correcto es title
 
         self.label = MDLabel(
-            text=self.contador,
+            text=str(self.contador),
             halign="center",
             font_style="H3"
         )
